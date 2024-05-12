@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+
+@font-face {
+  font-family: "Pixel";
+  src: url(Retro\ Gaming.ttf);
+}
+
+html, body{
+    margin :0;
+    padding: 0;
+    height: 100%;
+}
+
+.container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    background-image: url(/Images/wp3636739-professor-layton-wallpapers.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    transition: 2s ease-in-out;
+}
+
+.container img{
+  height: 100px;
+}
+
+.container span{
+  padding: 25px 25px 40px 25px;
+}
+
+a{
+  cursor: pointer;
+}
+
+#test{
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(101, 32, 0);
+    transition: 2s ease-in-out;
+    position: fixed;
+}
+
+.box{
+  opacity: 1;
+  transition: 2s ease-in-out;
+}
+
+.hidden{
+  opacity: 0;
+  transition: 2s ease-in-out;
+}
+
+.blur{
+  animation: blur-anim 4s linear forwards;
+}
+
+body {
+    background-color: black;
+}
+
+.btn span {
+  background: #FFF;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 5px;
+  border: 2px solid #000;
+}
+
+.container a span{
+  height: 135px;
+  width: 1000px;
+}
+
+#container img{
+  height: 200px;
+}
+
+#container img{
+  height: 200px;
+}
+
+.text{
+  text-shadow: 12px 12px 0px rgba(42, 42, 42, 0.582);
+  color: rgb(255, 170, 85);
+  font-size: 4em !important;
+  font: normal 22px/25px "Limelight", sans-serif;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: black;
+}
+
+#test span{
+  padding: 75px 25px;
+}
+
+.btn:hover {
+  box-shadow: 0 2px 0 #000, 0 2px 0px 2px #a25100;
+}
+
+#begin:active{
+  margin-top: 10px;
+}
+
+.btn:active {
+  top: 4px;
+  padding-bottom: 0px;
+  box-shadow: 0 1px 0 #000;
+}
+
+.btn {
+  position: relative;
+  float: left;
+  font: normal 22px/25px "Puzzle", sans-serif;
+  margin-right: 10px;
+  color: #000;
+  text-decoration: none;
+  padding-bottom: 3px;
+  border-radius: 5px;
+  box-shadow: 0 2px 0 #000;
+  transition: padding 0.1s, box-shadow 0.1s, top 0.1s;
+  background-image: url('data:image/gif;base64,R0lGODlhBAAEAIABAAAAAAAAACH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjEgNjQuMTQwOTQ5LCAyMDEwLzEyLzA3LTEwOjU3OjAxICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1LjEgV2luZG93cyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo5NUY1OENCRDdDMDYxMUUyOTEzMEE1MEM5QzM0NDVBMyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo5NUY1OENCRTdDMDYxMUUyOTEzMEE1MEM5QzM0NDVBMyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjk1RjU4Q0JCN0MwNjExRTI5MTMwQTUwQzlDMzQ0NUEzIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjk1RjU4Q0JDN0MwNjExRTI5MTMwQTUwQzlDMzQ0NUEzIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Af/+/fz7+vn49/b19PPy8fDv7u3s6+rp6Ofm5eTj4uHg397d3Nva2djX1tXU09LR0M/OzczLysnIx8bFxMPCwcC/vr28u7q5uLe2tbSzsrGwr66trKuqqainpqWko6KhoJ+enZybmpmYl5aVlJOSkZCPjo2Mi4qJiIeGhYSDgoGAf359fHt6eXh3dnV0c3JxcG9ubWxramloZ2ZlZGNiYWBfXl1cW1pZWFdWVVRTUlFQT05NTEtKSUhHRkVEQ0JBQD8+PTw7Ojk4NzY1NDMyMTAvLi0sKyopKCcmJSQjIiEgHx4dHBsaGRgXFhUUExIREA8ODQwLCgkIBwYFBAMCAQAAIfkEAQAAAQAsAAAAAAQABAAAAgYEEpdoeQUAOw==');
+}
+
+@keyframes blur-anim {
+	100% {	filter: blur(2000px) };
+}
+
+#canva{
+  display: none;
+  height: 100%;
+  width: max-content;
+}
+
+.nav{
+  height: 49.4vh;
+  width: 21%;
+  position: fixed;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-around;
+  transition: opacity .5s;
+  background-color: white;
+  border: 0.3vh solid white;
+  right: 0;
+}
+
+.nav .exit{
+  background-color: #3f89ff;
+}
+
+.nav .clear{
+  background-color: #b5b5b5;
+}
+
+.nav button{
+  width: 13vh;
+  height: 5vh;
+  font-size: 2.1vh;
+}
+
+#canva img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.nav div, button, input{
+  margin: 5px;
+}
+.nav:hover{
+  cursor: pointer;
+}
+buttton:hover{
+  cursor: pointer;
+}
+.clr{
+  height: 5%;
+  width: 30%;
+  background-color: blue;
+  border: 0.2em solid white;
+  outline: 0.35vh solid black;
+  transition: transform .5s;
+  box-shadow: 0px 4px 1px rgb(169, 169, 169);
+}
+.clr:nth-child(1){
+  background-color: #000;
+}
+.clr:nth-child(2){
+  background-color: red;
+}
+.clr:nth-child(3){
+  background-color: green;
+}
+.clr:nth-child(4){
+  background-color: blue;
+}
+
+button{
+  border: none;
+  outline: none;
+  font-size: 3vh;
+  border-radius: 3px;
+  background-color: #03bb56;
+  color: #fff;
+  border: 3px solid white;
+  font-weight: bold;
+  font-family: "Pixel";
+  text-shadow: 0px 0px 10px black;
+  border: solid 0.2em black;
+  box-shadow: 0px 4px 1px rgb(169, 169, 169);
+}
+.save{
+  background-color: #0f65d4;
+}
+input[type="color"] {
+  width: 60px;
+  height: 40px;
+}
+#ageOutputId{
+  color: white;
+  font-weight: bold;
+  font-size: 15pt;
+}
+#ageInputId {
+  background: linear-gradient(to right, #000428 0%, #004e92 100%);
+  height: 7px;
+  outline: none;
+  -webkit-appearance: none;
+  cursor: ew-resize;
+  border-radius: 5px;
+  border: 3px solid white;
+  accent-color: white;
+}
+
+#notesSpace{
+  position: fixed;
+  height: 50vh;
+  margin-top: 50vh;
+  width: 66.6vh;
+  margin-left: 50vw;
+  transform: translate(-50%);
+}
+
+#containerCanva{
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.494);
+  z-index: 2;
+}
+
+canvas{
+  height: 50.2vh;
+  width: 66.6vh;
+}
+
+.enigmes{
+  position: absolute;
+  margin-left: 50vw;
+  transform: translate(-50%);
+  display: none;
+}
+
+.parts{
+  display: none;
+  position: absolute;
+  top: 0;
+}
+
+#notes{
+  z-index: 1;
+  position: absolute;
+  left: 78.3%;
+  top: 15.6vh;
+  height: 5.2vh;
+  width: 13.55vh;
+  border: solid 0.105em white;
+  box-shadow: 0px 3px 8px black;
+}
+
+.hiddenNotes{
+  opacity: 0;
+  transition: 2s ease-in-out;
+}
+
+.boxNotes{
+  opacity: 1;
+  transition: 0.1s ease-in-out;
+}
+
+#response{
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  z-index: 1;
+  position: absolute;
+  height: 200px;
+  width: 20vh;
+  left: 77vw;
+  top: 70vh;
+}
+
+#response button{
+  border: solid 0.105em white;
+  box-shadow: 0px 7px 5px gray;
+  left: 1vw;
+  font-size: 3vh;
+}
+
+#response input{
+  height: 3vh;
+  font-size: xx-large;
+}
+
+#response button:active{
+  transform: translateY(7px);
+  box-shadow: none;
+}
+
+.hiddenVideo{
+  opacity: 0;
+  transition: 2s ease-in-out;
+}
+
+.boxVideo{
+  opacity: 1;
+  transition: 2s ease-in-out;
+}

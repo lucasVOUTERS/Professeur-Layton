@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoctoWeek 7</title>
+    <script src="script.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/jpeg" href="Images/kamen_rider_ex_aid_double_action_gamer_level_xx_r_by_zeronatt1233_dc572df-pre.jpg" />
+</head>
+<body>
+    <audio loop id="audioIntro" src="audios/Layton Theme.mp3"></audio>
+    <audio id="audioValidate" src="audios/419.wav"></audio>
+    <audio loop id="audioPuzzle" src="audios/Puzzles.mp3"></audio>
+    <audio id="introPuzzle" src="audios/100.wav"></audio>
+
+    <div id="test" class="box">
+        <a class="btn"><span onclick="launchMenu()"><div class="text">VoctoWeek 07</div></span></a>
+    </div>
+
+    <div id="container" class="container hidden">
+        <a id="begin" onclick="launchVocto(); this.onclick=null;">
+            <img src="Images/Layton_Début-removebg-preview.png" alt="Débuter">
+        </a>
+    </div>
+
+    <video id="part1" class="parts" width="100%" height="100%" src="vidéos/Partie1.mp4"></video>
+    <video id="part2" class="parts" width="100%" height="100%" src="vidéos/Partie2.mp4"></video>
+    <video id="part3" class="parts" width="100%" height="100%" src="vidéos/Partie3.mp4"></video>
+    <video id="part4" class="parts" width="100%" height="100%" src="vidéos/Partie4.mp4"></video>
+    <video id="part5" class="parts" width="100%" height="100%" src="vidéos/Partie5.mp4"></video>
+
+    <div id="canva">
+        <video id="puzzle1" class="enigmes" width="100%" height="100%" src="vidéos/Enigme 1.mp4"></video>
+        <video id="puzzle2" class="enigmes" width="100%" height="100%" src="vidéos/Enigme 2.mp4"></video>
+        <video id="puzzle3" class="enigmes" width="100%" height="100%" src="vidéos/Enigme 3.mp4"></video>
+        <video id="puzzle4" class="enigmes" width="100%" height="100%" src="vidéos/Enigme 4.mp4"></video>
+
+        <div id="response" class="hiddenVideo" style="display: none;">
+            <input type="text" id="userResponse">
+            <button style="background-color: orange; color: white;" onclick="Validate()">Valider</button>
+        </div>
+
+        <div id="notesSpace">
+            <button id="notes" class="hiddenNotes" onclick="notes()" type="button">Notes</button>
+            <div id="containerCanva" style="display: block;">
+                <div class="nav">
+                    <div class="clr" style="outline: solid 0.35vh orange;" data-clr="#000"></div>
+                    <div class="clr" data-clr="red"></div>
+                    <div class="clr" data-clr="green"></div>
+                    <div class="clr" data-clr="blue"></div>
+                    <button class="clear">Effacer</button>
+                    <button class="exit" onclick="closeNotes()">Retour</button>
+                </div>
+                <canvas id="canvas"></canvas>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
