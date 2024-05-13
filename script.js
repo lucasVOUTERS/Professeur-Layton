@@ -270,6 +270,9 @@ function Validate() {
     var vol = 0.2;
     const inputResponse = document.getElementById('userResponse');
 
+    const win = document.getElementById("win");
+    const loose = document.getElementById("loose");
+
     if (temp == 0) {
         const puzzle1 = document.getElementById("puzzle1");
         puzzle1.classList.remove('boxVideo');
@@ -286,19 +289,34 @@ function Validate() {
 
         fadeout(vol, audioPuzzle);
         if (data.toUpperCase() == "E") {
-            temp++;
-            launchVideo2();
             setTimeout(() => {
-                inputResponse.value = "";
-                document.querySelector(".clear").click();
+                win.play();
             }, 2000);
+
+            temp++;
+
+            setTimeout(() => {
+                launchVideo2();
+                setTimeout(() => {
+                    inputResponse.value = "";
+                    document.querySelector(".clear").click();
+                }, 2000);
+            }, 5000);
+
             return;
         } else{
             setTimeout(() => {
+                loose.play();
+            }, 2000);
+
+            setTimeout(() => {
                 audioPuzzle.pause();
                 audioPuzzle.currentTime = 0;
-                LaunchPuzzle1();
             }, 2000);
+            
+            setTimeout(() => {
+                LaunchPuzzle1();
+            }, 6000);
         }
     }
     if (temp == 1) {
@@ -317,19 +335,34 @@ function Validate() {
 
         fadeout(vol, audioPuzzle);
         if (data == "3") {
-            temp++;   
-            launchVideo3();
             setTimeout(() => {
-                inputResponse.value = "";
-                document.querySelector(".clear").click();
+                win.play();
             }, 2000);
+
+            temp++;   
+
+            setTimeout(() => {
+                launchVideo3();
+                setTimeout(() => {
+                    inputResponse.value = "";
+                    document.querySelector(".clear").click();
+                }, 2000);
+            }, 5000);
+
             return;    
         } else{
             setTimeout(() => {
+                loose.play();
+            }, 2000);
+
+            setTimeout(() => {
                 audioPuzzle.pause();
                 audioPuzzle.currentTime = 0;
-                LaunchPuzzle1();
             }, 2000);
+            
+            setTimeout(() => {
+                LaunchPuzzle1();
+            }, 6000);
         }
     }
     if (temp == 2) {
@@ -348,19 +381,34 @@ function Validate() {
 
         fadeout(vol, audioPuzzle);
         if (data == "10") {
-            temp++;      
-            launchVideo4();
             setTimeout(() => {
-                inputResponse.value = "";
-                document.querySelector(".clear").click();
+                win.play();
             }, 2000);
+
+            temp++;      
+            
+            setTimeout(() => {
+                launchVideo4();
+                setTimeout(() => {
+                    inputResponse.value = "";
+                    document.querySelector(".clear").click();
+                }, 2000);
+            }, 5000);
+
             return; 
         } else{
             setTimeout(() => {
+                loose.play();
+            }, 2000);
+
+            setTimeout(() => {
                 audioPuzzle.pause();
                 audioPuzzle.currentTime = 0;
-                LaunchPuzzle1();
             }, 2000);
+            
+            setTimeout(() => {
+                LaunchPuzzle1();
+            }, 6000);
         }
     }
     if (temp == 3) {
@@ -378,19 +426,34 @@ function Validate() {
 
         fadeout(vol, audioPuzzle);
         if (data == "12") {
-            temp++;      
-            launchVideo5(); 
             setTimeout(() => {
-                inputResponse.value = "";
-                document.querySelector(".clear").click();
+                win.play();
             }, 2000);
+
+            temp++;      
+
+            setTimeout(() => {
+                launchVideo5(); 
+                setTimeout(() => {
+                    inputResponse.value = "";
+                    document.querySelector(".clear").click();
+                }, 2000);
+            }, 5000);
+            
             return;
         } else{
             setTimeout(() => {
+                loose.play();
+            }, 2000);
+
+            setTimeout(() => {
                 audioPuzzle.pause();
                 audioPuzzle.currentTime = 0;
-                LaunchPuzzle1();
             }, 2000);
+            
+            setTimeout(() => {
+                LaunchPuzzle1();
+            }, 6000);
         }
     }
     setTimeout(() => {
